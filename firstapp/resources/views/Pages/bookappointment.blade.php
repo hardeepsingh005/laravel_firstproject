@@ -1,0 +1,621 @@
+ @extends('Pages.layouts.main')
+
+@section('content') 
+
+    <!-- Page Header Section Start -->
+    <div class="page-header parallaxie">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Page Header Box Start -->
+                    <div class="page-header-box">
+                        <h1 class="wow fadeInUp" data-cursor="-opaque">Book <span>appointment</span></h1>
+                        <nav class="wow fadeInUp" data-wow-delay="0.2s">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index-2.html">home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Book appointment</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- Page Header Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header Section End -->
+
+    <!-- Page Book Appointment Start -->
+    <div class="page-book-appointment">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5">
+                    <!-- Our Appointment Content Start -->
+                    <div class="our-appointment-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <span class="section-sub-title wow fadeInUp">Book an Appointment</span>
+                            <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">Book research testing <span>appointment</span></h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.4s">Book an advanced lab testing session to receive accurate, results backed by modern scientific methods and expert analysis.</p>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- Section Footer Text Start -->
+                        <div class="section-footer-text section-satisfy-img wow fadeInUp" data-wow-delay="0.6s">
+                            <!-- Satisfy Client Images Start -->
+                            <div class="satisfy-client-images">
+                                <div class="satisfy-client-image">
+                                    <figure class="image-anime">
+                                        <img src="{{url('assets/images/author-1.jpg')}}" alt="">
+                                    </figure>
+                                </div>
+                                <div class="satisfy-client-image add-more">
+                                    <img src="{{url('assets/images/icon-phone-white.svg')}}" alt="">
+                                </div>
+                            </div>
+                            <!-- Satisfy Client Images End -->    
+                            <p><b>Working Hours:</b> Monday-Saturday, 9:00 AM - 7:00 PM</p>
+                        </div>
+                        <!-- Section Footer Text End -->
+                    </div>
+                    <!-- Our Appointment Content End -->
+                </div>
+
+                <div class="col-xl-7">
+                    <!-- Book Appointment Form Start -->
+                    <div class="appointment-form wow fadeInUp" data-wow-delay="0.2s">
+                        <form id="appointmentForm" action="#" method="POST" data-toggle="validator">
+                            <div class="row">                                
+                                <div class="form-group col-md-6 mb-4">
+                                    <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name *" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                
+                                <div class="form-group col-md-6 mb-4">
+                                    <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name *" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                
+                                <div class="form-group col-md-12 mb-4">
+                                    <input type="email" name ="email" class="form-control" id="email" placeholder="E-mail Address *" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="form-group col-md-12 mb-4">
+                                    <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone no. *" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>                                 
+                                                                    
+                                <div class="form-group col-md-6 mb-4">
+                                    <select name="services" class="form-control form-select" id="services" required>
+                                        <option value="" disabled selected>Select a Services</option>
+                                        <option value="comprehensive_eye_exams">Comprehensive Eye Exams</option>
+                                        <option value="contact_lens_fitting">Contact Lens Fitting</option>
+                                        <option value="retinal_treatments">Retinal Treatments</option>
+                                        <option value="diabetic_eye_care">Diabetic Eye Care</option>
+                                        <option value="refractive_consultation">Refractive Consultation</option>
+                                        <option value="pediatric_eye_care">Pediatric Eye Care</option>
+                                    </select>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+            
+                                <div class="form-group col-md-6 mb-4">
+                                    <input type="date" name="date" class="form-control" id="date" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="appointment-form-btn">
+                                        <button type="submit" class="btn-default"><span>Make An Appointment</span></button>
+                                        <div id="msgSubmit" class="h3 hidden"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Book Appointment Form End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Book Appointment End -->
+
+    <!-- Why Choose Us Section Start -->
+    <div class="why-choose-us why-choose-video bg-section dark-section">
+        <!-- Video Start -->
+        <div class="why-choose-bg-video">
+            <!-- Selfhosted Video Start -->
+            <!-- <video autoplay muted loop playsinline id="myvideo"><source src="images/genlab-why-choose-bg-video.mp4" type="video/mp4"></video> -->
+            <video autoplay muted loop playsinline id="myvideo"><source src="https://demo.awaikenthemes.com/assets/videos/genlab-why-choose-video.mp4" type="video/mp4"></video>
+            <!-- Selfhosted Video End -->
+
+            <!-- Youtube Video Start -->
+            <!-- <div id="herovideo" class="player" data-property="{videoURL:'OjTRVpgtcG4',containment:'.hero-video', showControls:false, autoPlay:true, loop:true, vol:0, mute:false, startAt:0,  stopAt:296, opacity:1, addRaster:true, quality:'large', optimizeDisplay:true}"></div> -->
+            <!-- Youtube Video End -->
+        </div>
+        <!-- Video End -->
+        
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-xl-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title section-title-center">
+                        <span class="section-sub-title wow fadeInUp">Why Choose Us</span>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">Why our scientific <span>expertise</span></h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.4s">Our team combines domain knowledge, validated methodologies, and specialized laboratory techniques to produce data of high scientific integrity.</p>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Why Choose Us Box Start -->
+                    <div class="why-choose-us-boxes">
+                        <!-- Why Choose Us 1 Start -->
+                        <div class="why-choose-us-box box-1 wow fadeInUp">
+                            <!-- Why Choose Us Image Start -->
+                            <div class="why-choose-us-image">
+                                <figure class="image-anime reveal">
+                                    <img src="{{url('assets/images/why-choose-us-image-1.jpg')}}" alt="">
+                                </figure>
+                            </div>
+                            <!-- Why Choose Us Image End -->
+                            
+                            <!-- Why Choose Counter Box Start -->
+                            <div class="why-choose-counter-box">
+                                <div class="why-choose-counter-circle">
+                                    <div class="circle" data-size="80" data-value="0.75">
+                                        <div class="progress_value"><span class="pro_data"></span><span>%</span></div>
+                                    </div>
+                                </div>                                
+                                <div class="why-choose-counter-content">
+                                    <h2>High-Accuracy Test Results</h2>
+                                </div>
+                            </div>
+                            <!-- Why Choose Counter Box End -->
+                        </div>
+                        <!-- Why Choose Us 1 End -->
+
+                        <!-- Why Choose Us 2 Start -->
+                        <div class="why-choose-us-box box-2 wow fadeInUp" data-wow-delay="0.2s">
+                            <!-- Why Choose Us Image Start -->
+                            <div class="why-choose-us-image">
+                                <figure class="image-anime">
+                                    <img src="{{url('assets/images/why-choose-us-image-2.jpg')}}" alt="">
+                                </figure>
+                            </div>
+                            <!-- Why Choose Us Image End -->
+
+                            <!-- Why Choose Skills List Start -->
+                            <div class="why-choose-skills-list">
+                                <!-- Skills Progress Bar Start -->
+                                <div class="skills-progress-bar">
+                                    <!-- Skill Item Start -->
+                                    <div class="skillbar" data-percent="90%">
+                                        <div class="skill-data">
+                                            <div class="skill-title">Safety Compliance</div>
+                                            <div class="skill-no">90%</div>
+                                        </div>
+                                        <div class="skill-progress">
+                                            <div class="count-bar"></div>
+                                        </div>
+                                    </div>
+                                    <!-- Skill Item End -->
+                                </div>
+                                <!-- Skills Progress Bar End -->
+                            </div>
+                            <!-- Why Choose Skills List End -->
+                        </div>
+                        <!-- Why Choose Us 2 End -->
+                        
+                        <!-- Why Choose Us 3 Start -->
+                        <div class="why-choose-us-box box-3 wow fadeInUp" data-wow-delay="0.4s">
+                            <!-- Why Choose Us Item Start -->
+                            <div class="why-choose-us-item">
+                                <div class="icon-box">
+                                    <img src="{{url('assets/images/icon-why-choose-us-1.svg')}}" alt="">
+                                </div>
+                                <div class="why-choose-item-content">
+                                    <h2><span class="counter">99.9</span>%</h2>
+                                    <p>High-end analytical instruments deliver near-perfect precision in measurement.</p>
+                                </div>
+                            </div>
+                            <!-- Why Choose Us Item End -->
+                            
+                            <!-- Why Choose Us Image Start -->
+                            <div class="why-choose-us-image">
+                                <figure class="image-anime">
+                                    <img src="{{url('assets/images/why-choose-us-image-3.jpg')}}" alt="">
+                                </figure>
+                            </div>
+                            <!-- Why Choose Us Image End -->
+                        </div>
+                        <!-- Why Choose Us 3 End -->
+                    </div>
+                    <!-- Why Choose Us Box End -->
+                </div>
+
+                <div class="col-lg-12">
+                    <!-- Section Footer Text Start -->
+                    <div class="section-footer-text section-satisfy-img wow fadeInUp" data-wow-delay="0.2s">
+                        <!-- Satisfy Client Images Start -->
+                        <div class="satisfy-client-images">
+                            <div class="satisfy-client-image">
+                                <figure class="image-anime">
+                                    <img src="{{url('assets/images/author-1.jpg')}}" alt="">
+                                </figure>
+                            </div>
+                            <div class="satisfy-client-image add-more">
+                                <img src="{{url('assets/images/icon-phone-white.svg')}}" alt="">
+                            </div>
+                        </div>
+                        <!-- Satisfy Client Images End -->    
+                        <p>Connect with us today and take the first step toward clearer vision - <a  href="contact.html">Contact Us</a></p>
+                        <ul>
+                            <li><span class="counter">4.9</span>/5</li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>Over 4200 Reviews</li>
+                        </ul>
+                    </div>
+                    <!-- Section Footer Text End -->
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- Why Choose Us Section End -->
+
+    <!-- What We Do Section Start -->
+    <div class="what-we-do">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6">
+                    <!-- What We Do Content Box Start -->
+                    <div class="what-we-do-content-box">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <span class="section-sub-title wow fadeInUp">What We Do</span>
+                            <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">Pioneering research for a <span>smarter future</span></h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.4s">We use science and research to create better, smarter solutions for the future—making life easier, industries stronger, and technology more efficient.</p>
+                        </div>
+                        <!-- Section Title End -->
+                        
+                        <!-- What We Do Skill List Start -->
+                        <div class="what-we-do-skill-list">
+                            <!-- Skills Progress Bar Start -->
+                            <div class="skills-progress-bar">
+                                <!-- Skill Item Start -->
+                                <div class="skillbar" data-percent="90%">
+                                    <div class="skill-data">
+                                        <div class="skill-title">Safety Compliance</div>
+                                        <div class="skill-no">90%</div>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="count-bar"></div>
+                                    </div>
+                                </div>
+                                <!-- Skill Item End -->
+                            </div>
+                            <!-- Skills Progress Bar End -->
+                        </div>
+                        <!-- What We Do Skill List End -->
+
+                        <!-- What We Do Counter Boxes Start -->
+                        <div class="what-we-do-counter-boxes wow fadeInUp" data-wow-delay="0.6s">
+                            <!-- What We Do Counter Item Start -->
+                            <div class="what-we-do-counter-item">
+                                <div class="icon-box">
+                                    <img src="{{url('assets/images/icon-what-we-do-counetr-1.svg')}}" alt="">
+                                </div>
+                                <div class="what-we-counter-item-content">
+                                    <h2><span class="counter">80</span>%</h2>
+                                    <p>Global collaboration</p>
+                                </div>
+                            </div>
+                            <!-- What We Do Counter Item End -->
+                            
+                            <!-- What We Do Counter Item Start -->
+                            <div class="what-we-do-counter-item">
+                                <div class="icon-box">
+                                    <img src="{{url('assets/images/icon-what-we-do-counetr-2.svg')}}" alt="">
+                                </div>
+                                <div class="what-we-counter-item-content">
+                                    <h2><span class="counter">24</span>/7</h2>
+                                    <p>Emergency Support</p>
+                                </div>
+                            </div>
+                            <!-- What We Do Counter Item End -->
+                        </div>
+                        <!-- What We Do Counter Boxes End -->
+                        
+                        <!-- What We Do Footer Start -->
+                        <div class="what-we-do-footer wow fadeInUp" data-wow-delay="0.8s">
+                            <!-- What We Do Button Start -->
+                            <div class="what-we-do-btn">
+                                <a href="{{ route('web.bookappointment') }}" class="btn-default">Book Appointment</a>
+                            </div>
+                            <!-- What We Do Button End -->
+                            
+                            <!-- What We Do Author Box Start -->
+                            <div class="what-we-do-contact-box">
+                                <div class="icon-box">
+                                    <img src="{{url('assets/images/icon-phone-accent.svg')}}" alt="">
+                                </div>
+                                <div class="what-we-contact-content">
+                                    <p>Call Us!</p>
+                                    <h3><a href="tel:123456789">+123 456 789</a></h3>
+                                </div>
+                            </div>
+                            <!-- What We Do Author Box End -->
+                        </div>
+                        <!-- What We Do Footer End -->
+                    </div>
+                    <!-- What We Do Content Box End -->
+                </div>
+
+                <div class="col-xl-6">
+                    <!-- What We Do Image Box Start -->
+                    <div class="what-we-do-images-box wow fadeInUp">
+                        <!-- What We Image Box 1 Start -->
+                        <div class="what-we-do-image">
+                            <figure>
+                                <img src="{{url('assets/images/what-we-do-image.png')}}" alt="">
+                            </figure>
+                        </div>
+                        <!-- What We Image Box 1 End -->
+                        
+                        <!-- What We Do Author Box Start -->
+                        <div class="what-we-do-author-box">
+                            <div class="what-we-author-image">
+                                <figure class="image-anime">
+                                    <img src="{{url('assets/images/author-1.jpg')}}" alt="">                                    
+                                </figure>
+                            </div>
+                            <div class="what-we-author-content">
+                                <h3>Robert Fox</h3>
+                                <p>CEO & Founders</p>
+                            </div>
+                        </div>
+                        <!-- What We Do Author Box End -->
+                    </div>
+                    <!-- What We Do Image Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- What We Do Section End -->
+
+    <!-- Our Features Section Start -->
+    <div class="our-features bg-section dark-section">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title section-title-center">
+                        <span class="section-sub-title wow fadeInUp">Key Feature</span>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">Discover key features driving <span>scientific innovation</span></h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Feature Item List Start -->
+                    <div class="feature-item-list">
+                        <!-- Feature Item Start -->
+                        <div class="feature-item wow fadeInUp">
+                            <div class="icon-box">
+                                <img src="{{url('assets/images/icon-feature-item-1.svg')}}" alt="">
+                            </div>
+                            <div class="feature-item-content">
+                                <h3>High-Precision Testing</h3>
+                                <p>Our precision testing methods industries verify performance.</p>
+                            </div>
+                        </div>
+                        <!-- Feature Item End -->
+                        
+                        <!-- Feature Item Start -->
+                        <div class="feature-item wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="icon-box">
+                                <img src="{{url('assets/images/icon-feature-item-2.svg')}}" alt="">
+                            </div>
+                            <div class="feature-item-content">
+                                <h3>Evidence-Based Research</h3>
+                                <p>Our precision testing methods industries verify performance.</p>
+                            </div>
+                        </div>
+                        <!-- Feature Item End -->
+                        
+                        <!-- Feature Item Start -->
+                        <div class="feature-item wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="icon-box">
+                                <img src="{{url('assets/images/icon-feature-item-3.svg')}}" alt="">
+                            </div>
+                            <div class="feature-item-content">
+                                <h3>Trusted Data Analysis</h3>
+                                <p>Our precision testing methods industries verify performance.</p>
+                            </div>
+                        </div>
+                        <!-- Feature Item End -->
+                    </div>
+                    <!-- Feature Item List End -->
+                </div>
+                
+                <div class="col-lg-12">
+                    <!-- CTA Box Start -->
+                    <div class="cta-box">
+                        <!-- CTA Box image Start -->
+                        <div class="cta-box-image">
+                            <figure class="image-anime reveal">
+                                <img src="{{url('assets/images/cta-box-image.jpg')}}" alt="">
+                            </figure>
+                        </div>
+                        <!-- CTA Box image End -->
+                        
+                        <!-- CTA Box Content Start -->
+                        <div class="cta-box-content">
+                            <!-- Section Title Start -->
+                            <div class="section-title">
+                                <span class="section-sub-title wow fadeInUp">Contact Us</span>
+                                <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">Get in touch <span>with expert</span></h2>
+                                <p class="wow fadeInUp" data-wow-delay="0.4s">Contact our experts to get answers, request services, or learn how our lab can support your research and testing needs.</p>
+                            </div>
+                            <!-- Section Title End -->
+    
+                            <!-- CTA Box Footer Start -->
+                            <div class="cta-box-footer wow fadeInUp" data-wow-delay="0.6s">
+                                <!-- CTA Box Button Start -->
+                                <div class="cta-box-btn">
+                                    <a href="{{ route('web.contact') }}" class="btn-default">Contact now</a>
+                                </div>
+                                <!-- CTA Box Button End -->
+    
+                                <!-- What We Do Author Box Start -->
+                                <div class="what-we-do-contact-box">
+                                    <div class="icon-box">
+                                        <img src="{{url('assets/images/icon-phone-accent.svg')}}" alt="">
+                                    </div>
+                                    <div class="what-we-contact-content">
+                                        <p>Call Us!</p>
+                                        <h3><a href="tel:123456789">+123 456 789</a></h3>
+                                    </div>
+                                </div>
+                                <!-- What We Do Author Box End -->
+                            </div>
+                            <!-- CTA Box Footer End -->
+                        </div>
+                        <!-- CTA Box Content End -->
+                    </div>
+                    <!-- CTA Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Features Section End -->
+
+    <!-- Our Faqs Section Start -->
+    <div class="our-faqs">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <!-- Faq Image Box Start -->
+                    <div class="faq-image-box wow fadeInUp">
+                        <!-- Faq Image Start -->
+                         <div class="faq-image">
+                            <figure class="image-anime">
+                                <img src="{{url('assets/images/faq-image.jpg')}}" alt="">
+                            </figure>
+                         </div>
+                        <!-- Faq Image End -->
+
+                        <!-- Faq CTA Box Start -->
+                        <div class="faq-cta-box">
+                            <!-- Faq CTA Box Header Start -->
+                            <div class="faq-cta-header">
+                                <div class="icon-box">
+                                    <img src="{{url('assets/images/icon-faq-cta.svg')}}" alt="">
+                                </div>
+                                <div class="faq-cta-title">
+                                    <h2>Knowledge That Supports Your Research</h2>
+                                </div>
+                            </div>
+                            <!-- Faq CTA Box Header End -->
+
+                            <!-- Faq CTA Contant Start -->
+                            <div class="faq-cta-contant">
+                                <h3><a href="tel:+123456789">+123 456 789</a></h3>
+                            </div>
+                            <!-- Faq CTA Contant End -->
+                        </div>
+                        <!-- Faq CTA Box End -->
+                    </div>
+                    <!-- Faq Image Box End -->
+                </div>
+
+                <div class="col-xl-6">
+                    <!-- Faq Contant Start -->
+                     <div class="faq-contant">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <span class="section-sub-title wow fadeInUp">Frequently Asked Questions</span>
+                            <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">Answers to your scientific <span>research questions</span></h2>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- FAQ Accordion Start -->
+                        <div class="faq-accordion" id="accordion">
+                            <!-- FAQ Item Start -->
+                            <div class="accordion-item wow fadeInUp">
+                                <h2 class="accordion-header" id="heading1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                        Q1. What types of laboratory services do you offer?
+                                    </button>
+                                </h2>
+                                <div id="collapse1" class="accordion-collapse collapse show" role="region" aria-labelledby="heading1" data-bs-parent="#accordion">
+                                    <div class="accordion-body">
+                                        <p>All results are obtained using validated methods, advanced instruments, and standardized protocols to ensure accuracy, reproducibility.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- FAQ Item End -->
+
+                            <!-- FAQ Item Start -->
+                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+                                <h2 class="accordion-header" id="heading2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        Q2. How accurate are your test results?
+                                    </button>
+                                </h2>
+                                <div id="collapse2" class="accordion-collapse collapse" role="region" aria-labelledby="heading2" data-bs-parent="#accordion">
+                                    <div class="accordion-body">
+                                        <p>All results are obtained using validated methods, advanced instruments, and standardized protocols to ensure accuracy, reproducibility.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- FAQ Item End -->
+
+                            <!-- FAQ Item Start -->
+                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
+                                <h2 class="accordion-header" id="heading3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                        Q3. What industries do you support?
+                                    </button>
+                                </h2>
+                                <div id="collapse3" class="accordion-collapse collapse" role="region" aria-labelledby="heading3" data-bs-parent="#accordion">
+                                    <div class="accordion-body">
+                                        <p>All results are obtained using validated methods, advanced instruments, and standardized protocols to ensure accuracy, reproducibility.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- FAQ Item End -->
+
+                            <!-- FAQ Item Start -->
+                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
+                                <h2 class="accordion-header" id="heading4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                        Q4. Do you support custom research projects?
+                                    </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" role="region" aria-labelledby="heading4" data-bs-parent="#accordion">
+                                    <div class="accordion-body">
+                                        <p>All results are obtained using validated methods, advanced instruments, and standardized protocols to ensure accuracy, reproducibility.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- FAQ Item End -->
+                        </div>
+                        <!-- FAQ Accordion End -->
+                     </div>
+                    <!-- Faq Contant End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Faqs Section End -->
+ @endsection

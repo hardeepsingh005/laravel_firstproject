@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- Mirrored from html.awaikenthemes.com/genlab/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Mar 2026 07:13:59 GMT -->
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Awaiken">
+	<!-- Page Title -->
+    <title>Genlab - Laboratory & Science Research HTML Template</title>
+	<!-- Favicon Icon -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <!-- Google Fonts Css-->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet">
+	<!-- Bootstrap Css -->
+	<link href="{{url('assets/css/bootstrap.min.css')}}" rel="stylesheet" media="screen">
+	<!-- SlickNav Css -->
+	<link href="{{url('assets/css/slicknav.min.css')}}" rel="stylesheet">
+	<!-- Swiper Css -->
+	<link rel="stylesheet" href="{{url('assets/css/swiper-bundle.min.css')}}">
+	<!-- Font Awesome Icon Css-->
+	<link href="{{url('assets/css/all.min.css')}}" rel="stylesheet" media="screen">
+	<!-- Animated Css -->
+	<link href="{{url('assets/css/animate.css')}}" rel="stylesheet">
+    <!-- Magnific Popup Core Css File -->
+	<link rel="stylesheet" href="{{url('assets/css/magnific-popup.css')}}">
+	<!-- Mouse Cursor Css File -->
+	<link rel="stylesheet" href="{{url('assets/css/mousecursor.css')}}">
+	<!-- Main Custom Css -->
+	<link href="{{url('assets/css/custom.css')}}" rel="stylesheet" media="screen">
+</head>
+<body>
+@include('Pages.layouts.header')
+@yield('content')
+
+@include('Pages.layouts.footer')
+    <!-- Jquery Library File -->
+    <script src="{{url('assets/js/jquery-3.7.1.min.js')}}"></script>
+    <!-- Circle Progress Js File -->
+    <script src="{{url('assets/js/circle-progress.min.js')}}"></script>
+    <!-- Bootstrap js file -->
+    <script src="{{url('assets/js/bootstrap.min.js')}}"></script>
+    <!-- Validator js file -->
+    <script src="{{url('assets/js/validator.min.js')}}"></script>
+    <!-- SlickNav js file -->
+    <script src="{{url('assets/js/jquery.slicknav.js')}}"></script>
+    <!-- Swiper js file -->
+    <script src="{{url('assets/js/swiper-bundle.min.js')}}"></script>
+    <!-- Counter js file -->
+    <script src="{{url('assets/js/jquery.waypoints.min.js')}}"></script>
+    <script src="js/jquery.counterup.min.js')}}"></script>
+    <!-- Magnific js file -->
+    <script src="{{url('assets/js/jquery.magnific-popup.min.js')}}"></script>
+    <!-- SmoothScroll -->
+    <script src="{{url('assets/js/SmoothScroll.js')}}"></script>
+    <!-- Parallax js -->
+    <script src="{{url('assets/js/parallaxie.js')}}"></script>
+    <!-- MagicCursor js file -->
+    <script src="{{url('assets/js/gsap.min.js')}}"></script>
+    <script src="js/magiccursor.js')}}"></script>
+    <!-- Text Effect js file -->
+    <script src="{{url('assets/js/SplitText.min.js')}}"></script>
+    <script src="{{url('assets/js/ScrollTrigger.min.js')}}"></script>
+    <!-- YTPlayer js File -->
+    <script src="{{url('assets/js/jquery.mb.YTPlayer.min.js')}}"></script>
+    <!-- Wow js file -->
+    <script src="{{url('assets/js/wow.min.js')}}"></script>
+    <!-- Main Custom js file -->
+    <script src="{{url('assets/js/function.js')}}"></script>
+</body>
+
+<!-- Mirrored from html.awaikenthemes.com/genlab/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Mar 2026 07:14:19 GMT -->
+</html>
