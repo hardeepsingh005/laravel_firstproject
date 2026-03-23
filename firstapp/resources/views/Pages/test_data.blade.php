@@ -1,6 +1,4 @@
 <h1>Data of Students</h1>
-
-
  
 <table border="1">
   <tr>

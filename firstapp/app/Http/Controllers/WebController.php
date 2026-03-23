@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\DB;
 
+use Illuminate\Support\Facades\DB;
+use App\Models\Student;
 
 class WebController extends Controller
 {
@@ -16,42 +17,92 @@ class WebController extends Controller
         return view('Pages.about');
     }
 
-    public function services() 
+    public function services()
     {
         return view('Pages.services');
     }
 
-     public function blog() 
+    public function blog()
     {
         return view('Pages.blog');
     }
-    
-     public function contact() 
+
+    public function contact()
     {
         return view('Pages.contact');
     }
 
-    public function bookappointment() 
+    public function bookappointment()
     {
-        return view ('Pages.bookappointment');
+        return view('Pages.bookappointment');
+    }
+
+    public function get_data()
+    {
+
+       // Query Builder
+        // $data = DB::table('students')->get();
+
+       // ORM
+        $data = Student::all();
+        // dd($data);
+        // return $data;
+        return view('Pages.test_data', compact('data'));
+
+    }
+
+    public function newData()
+    {
+        // DB::table('students')->Insert([
+        //     'name' => 'Hardeep23',
+        //     'father_name' => 'HS',
+        //     'mother_name' => 'KK',
+        //     'class' => 05,
+        //     'gender' => 'male',
+        //     'address' => 'HP',
+        // ]);
+
+        $article = Student::create([
+            'name' => '2234254',
+            'father_name' => 'HS',
+            'mother_name' => 'KK',
+            'class' => 05,
+            'gender' => 'male',
+            'address' => 'HP',
+            ]);
+
+
+
+        // return redirect()->back('Pages.test_data');
+        $data = DB::table('students')->get();
+
+        return view('Pages.test_data', compact('data'));
+
+    }
+
+    public function updateData()
+    {
+
+        DB::table('students')->where('student_id', 1)
+            ->update([
+                'name' => 'Hardeep GG',
+            ]);
+
+        $data = DB::table('students')->get();
+
+        return view('Pages.test_data', compact('data'));
+
+    }
+
+    public function dropData()
+    {
+        DB::table('students')->where('student_ID', 20)->delete();
+
+        $data = DB::table('students')->get();
+
+        return view('Pages.test_data', compact('data'));
+
     }
 
 
-    public function get_data(){
-
-    // $data = DB::table('students')->get();
-
-
-// $data =  DB::table('students')->where('name')->get();
-
-  $data = DB::table('students')
-                ->where('student_ID',1)   
-                ->get();
-
-
-    // dd($data);
-    // return $data;
-      return view('Pages.test_data' , compact('data'));
-
-    }
 }
