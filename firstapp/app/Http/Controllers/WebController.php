@@ -63,7 +63,7 @@ class WebController extends Controller
         // ]);
 
         $article = Student::create([
-            'name' => '2234254',
+            'name' => 'Mohit',
             'father_name' => 'HS',
             'mother_name' => 'KK',
             'class' => 05,
