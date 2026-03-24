@@ -54,7 +54,7 @@
     <script src="{{url('assets/js/swiper-bundle.min.js')}}"></script>
     <!-- Counter js file -->
     <script src="{{url('assets/js/jquery.waypoints.min.js')}}"></script>
-    <script src="js/jquery.counterup.min.js')}}"></script>
+    <script src="{{url('assets/js/jquery.counterup.min.js')}}"></script>
     <!-- Magnific js file -->
     <script src="{{url('assets/js/jquery.magnific-popup.min.js')}}"></script>
     <!-- SmoothScroll -->
@@ -63,7 +63,7 @@
     <script src="{{url('assets/js/parallaxie.js')}}"></script>
     <!-- MagicCursor js file -->
     <script src="{{url('assets/js/gsap.min.js')}}"></script>
-    <script src="js/magiccursor.js')}}"></script>
+    <script src="{{url('assets/js/magiccursor.js')}}"></script>
     <!-- Text Effect js file -->
     <script src="{{url('assets/js/SplitText.min.js')}}"></script>
     <script src="{{url('assets/js/ScrollTrigger.min.js')}}"></script>

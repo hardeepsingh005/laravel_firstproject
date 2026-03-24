@@ -1182,7 +1182,7 @@
                             <!-- Faq CTA Box Header Start -->
                             <div class="faq-cta-header">
                                 <div class="icon-box">
-                                    <img src="{{url('assets/images/images/icon-faq-cta.svg')}}" alt="">
+                                    <img src="{{url('assets/images/icon-faq-cta.svg')}}" alt="">
                                 </div>
                                 <div class="faq-cta-title">
                                     <h2>Knowledge That Supports Your Research</h2>
@@ -1303,11 +1303,11 @@
                             <div class="satisfy-client">
                                 <div class="satisfy-client-image">
                                     <figure class="image-anime">
-                                        <img src="{{url('assets/images/images/author-1.jpg')}}" alt="">
+                                        <img src="{{url('assets/images/author-1.jpg')}}" alt="">
                                     </figure>
                                 </div>
                                 <div class="satisfy-client-image add-more">
-                                    <img src="{{url('assets/images/images/icon-phone-white.svg')}}" alt="">
+                                    <img src="{{url('assets/images/icon-phone-white.svg')}}" alt="">
                                 </div>
                             </div>
                             <!-- Satisfy Client End -->    
