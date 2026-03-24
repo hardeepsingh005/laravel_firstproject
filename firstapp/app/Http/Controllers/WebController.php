@@ -137,7 +137,8 @@ public function appointmentNewData()
 
     $data = DB::table('bookappointments')->get();
 
-    return view('Pages.appointment', compact('data'));
+    // return view('Pages.appointment', compact('data'));
+      return redirect()->compact('data')->with('status', 'Post added successfully!');
 }
 
 }
