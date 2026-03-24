@@ -63,15 +63,16 @@
                 <div class="col-xl-7">
                     <!-- Book Appointment Form Start -->
                     <div class="appointment-form wow fadeInUp" data-wow-delay="0.2s">
-                        <form id="appointmentForm" action="#" method="POST" data-toggle="validator">
+                        <form id="appointmentForm" action="{{ route('web.appointmentData') }}" method="POST" data-toggle="validator" >
+                             @csrf
                             <div class="row">                                
                                 <div class="form-group col-md-6 mb-4">
-                                    <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name *" required>
+                                    <input type="text" name="firstName" class="form-control" id="fname" placeholder="First Name *" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 
                                 <div class="form-group col-md-6 mb-4">
-                                    <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name *" required>
+                                    <input type="text" name="lastName" class="form-control" id="lname" placeholder="Last Name *" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 
@@ -86,8 +87,8 @@
                                 </div>                                 
                                                                     
                                 <div class="form-group col-md-6 mb-4">
-                                    <select name="services" class="form-control form-select" id="services" required>
-                                        <option value="" disabled selected>Select a Services</option>
+                                    <select type="text" name="services" class="form-control form-select" id="services" required>
+                                        <option value="Select a Services ">Select a Services</option>
                                         <option value="comprehensive_eye_exams">Comprehensive Eye Exams</option>
                                         <option value="contact_lens_fitting">Contact Lens Fitting</option>
                                         <option value="retinal_treatments">Retinal Treatments</option>
@@ -99,7 +100,7 @@
                                 </div>
             
                                 <div class="form-group col-md-6 mb-4">
-                                    <input type="date" name="date" class="form-control" id="date" required>
+                                    <input type="date" name="appointment" class="form-control" id="date" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
 

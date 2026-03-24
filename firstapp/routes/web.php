@@ -21,6 +21,7 @@ Route::get('/add', [WebController::class, 'newData'])->name('web.student');
 Route::get('/dataUpdate', [WebController::class, 'updateData'])->name('web.student');
 Route::get('/delete', [WebController::class, 'dropData'])->name('web.student');
 
-// models 
-
-
+// appointment Data
+ Route::get('/appointment', [WebController::class, 'appointmentData'])->name('web.appointmentData');
+ Route::get('/appointData',[WebController::class,'appointmentNewData'])->name('web.appointmentData');
+ 

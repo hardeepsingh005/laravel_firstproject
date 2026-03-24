@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Student;
+
 
 class WebController extends Controller
 {
@@ -43,11 +44,15 @@ class WebController extends Controller
        // Query Builder
         // $data = DB::table('students')->get();
 
-       // ORM
-        $data = Student::all();
+        // ORM
         // dd($data);
         // return $data;
-        return view('Pages.test_data', compact('data'));
+
+        // $data = Student::select('student_ID','name')->get();
+
+        $data = Student::all();
+
+        return view('Pages.test_data',  compact('data'));
 
     }
 
@@ -74,19 +79,23 @@ class WebController extends Controller
 
 
         // return redirect()->back('Pages.test_data');
-        $data = DB::table('students')->get();
+        // $data = DB::table('students')->get();
 
-        return view('Pages.test_data', compact('data'));
+        // return view('Pages.test_data', compact('data'));
 
     }
 
     public function updateData()
     {
 
-        DB::table('students')->where('student_id', 1)
-            ->update([
-                'name' => 'Hardeep GG',
-            ]);
+        // DB::table('students')->where('student_id', 1)
+        //     ->update([
+        //         'name' => 'Hardeep GG',
+        //     ]);
+
+        $article = Student::where('student_ID',31)->update([
+                  'name' => 'Hardeep Thakur',
+        ]);
 
         $data = DB::table('students')->get();
 
@@ -96,13 +105,39 @@ class WebController extends Controller
 
     public function dropData()
     {
-        DB::table('students')->where('student_ID', 20)->delete();
+        // DB::table('students')->where('student_ID', 20)->delete();
 
+        $article = Student::where('student_ID',33)->delete();
+
+        
         $data = DB::table('students')->get();
 
         return view('Pages.test_data', compact('data'));
 
     }
 
+    public function appointmentData() {
+
+        $data = DB::table('bookappointments')->get();
+ 
+      
+         return view('Pages.appointment', compact('data'));
+    }
+
+public function appointmentNewData()
+{
+    DB::table('bookappointments')->insert([
+        'firstName' => 'HS',
+        'lastName' => 'SHT',
+        'email' => 'hs11@gmail.com',
+        'phone' => '1234567891',
+        'services' => 'SSGJS',
+        'appointment' => '2026-03-25',  
+    ]);
+
+    $data = DB::table('bookappointments')->get();
+
+    return view('Pages.appointment', compact('data'));
+}
 
 }
