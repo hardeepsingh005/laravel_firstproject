@@ -63,8 +63,7 @@
                 <div class="col-xl-7">
                     <!-- Book Appointment Form Start -->
                     <div class="appointment-form wow fadeInUp" data-wow-delay="0.2s">
-                        <form id="appointmentForm" action="{{ route('web.appointmentData') }}" method="POST" data-toggle="validator" >
-                             @csrf
+                        <form id="" action="{{ route('web.save_data') }}" method="POST" data-toggle="validator" >@csrf
                             <div class="row">                                
                                 <div class="form-group col-md-6 mb-4">
                                     <input type="text" name="firstName" class="form-control" id="fname" placeholder="First Name *" required>

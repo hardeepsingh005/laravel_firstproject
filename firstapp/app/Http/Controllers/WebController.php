@@ -124,21 +124,28 @@ class WebController extends Controller
          return view('Pages.appointment', compact('data'));
     }
 
-public function appointmentNewData()
+
+
+public function appointmentNewData(Request $request)
+
 {
-    DB::table('bookappointments')->insert([
-        'firstName' => 'HS',
-        'lastName' => 'SHT',
-        'email' => 'hs11@gmail.com',
-        'phone' => '1234567891',
-        'services' => 'SSGJS',
-        'appointment' => '2026-03-25',  
+
+    //   return $request->all();
+DB::table('bookappointments')->insert([
+        'firstName' => $request->firstName,
+        'lastName' => $request->lastName,
+        'email' => $request->email,
+        'phone' => $request->phone,
+        'services' => $request->services,
+        'appointment' => $request->appointment,  
     ]);
 
-    $data = DB::table('bookappointments')->get();
+    // $data = DB::table('bookappointments')->get();
 
-    // return view('Pages.appointment', compact('data'));
-      return redirect()->compact('data')->with('status', 'Post added successfully!');
+    // return view('Pages.appointment');
+            //  return view('Pages.appointment', compact('data'));
+
+    return redirect()->back();
 }
 
 }

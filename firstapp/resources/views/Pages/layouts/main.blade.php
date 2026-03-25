@@ -73,8 +73,7 @@
     <script src="{{url('assets/js/wow.min.js')}}"></script>
     <!-- Main Custom js file -->
     <script src="{{url('assets/js/function.js')}}"></script>
-    {{-- make appointment js --}}
-    <script src="{{url('resources\js\appointment.js')}}"></script>
+
 </body>
 
 <!-- Mirrored from html.awaikenthemes.com/genlab/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Mar 2026 07:14:19 GMT -->

@@ -23,5 +23,5 @@ Route::get('/delete', [WebController::class, 'dropData'])->name('web.student');
 
 // appointment Data
  Route::get('/appointment', [WebController::class, 'appointmentData'])->name('web.appointmentData');
- Route::get('/appointData',[WebController::class,'appointmentNewData'])->name('web.appointmentData');
+ Route::post('/appointData',[WebController::class,'appointmentNewData'])->name('web.save_data');
  
