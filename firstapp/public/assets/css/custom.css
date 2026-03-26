@@ -11176,3 +11176,16 @@ header.main-header.main-header-prime .slicknav_menu{
         padding: 15px 0;
     }
 }
+
+
+/* career form page */
+
+     .avatar { width:36px; height:36px; border-radius:50%; object-fit:cover; }
+    .status-badge { padding:4px 10px; border-radius:999px; font-size:12px; }
+    .status-active { background:#e7f6ec; color:#0f5132; }
+    .status-inactive { background:#eef0f2; color:#41464b; }
+    .status-superseded { background:#fde8ea; color:#842029; }
+
+	.fromTable {
+		padding: 10% !important;
+	}

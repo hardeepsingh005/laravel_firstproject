@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\View;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Student;
@@ -37,6 +38,17 @@ class WebController extends Controller
     {
         return view('Pages.bookappointment');
     }
+
+    public function career() 
+    {
+    return view('Pages.career');
+    }
+
+    public function updateTable()
+    {
+        return view('Pages.update_table');
+    }
+
 
     public function get_data()
     {
@@ -131,7 +143,7 @@ public function appointmentNewData(Request $request)
 {
 
     //   return $request->all();
-DB::table('bookappointments')->insert([
+        DB::table('bookappointments')->insert([
         'firstName' => $request->firstName,
         'lastName' => $request->lastName,
         'email' => $request->email,
@@ -148,4 +160,79 @@ DB::table('bookappointments')->insert([
     return redirect()->back();
 }
 
+// career 
+
+public function career_data()
+
+{
+    $data = DB::table('careers')->get();
+    return view('Pages.data_career', compact('data'));
 }
+
+     public function devData() 
+
+    {
+            $data = DB::table('dev_data')->get();
+
+            return view('Pages.career',  compact('data'));
+
+
+    }
+
+    public function devStore(Request $request, $id)
+    {
+        //  return $request->all(); 
+       $data = DB::table('dev_data')->where('id', $id)->first();
+
+        return view('Pages.update_table', compact('data'));
+    }
+   
+    // update table data 
+    public function dataUpdateTable(Request $request, $id){
+    {
+          DB::table('dev_data')->where('id', $id)->update([
+
+            'name' => $request->name,
+            'designation' => $request->designation,
+            'department' => $request->department,
+            'location' => $request->location,
+            'date' => $request->date,
+            //  $file->image,
+            'status' => $request->status,
+        ]);
+              return redirect()->back();
+    }
+}
+
+// delete data 
+
+public function drop_table_data(Request $request, $id)
+{
+    
+//  return $request->all();
+
+// dd($id);
+
+             DB::table('dev_data')->where('id', $id)->delete();
+
+            // $data = DB::table('dev_data')->get();
+
+            return redirect()->back();
+
+            // return view('Pages.career');
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

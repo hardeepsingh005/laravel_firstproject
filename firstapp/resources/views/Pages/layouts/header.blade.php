@@ -41,6 +41,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item"><a class="nav-link" href="{{ route('web.contact') }}">Contact Us</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="{{route('web.careers')}}">Career</a></li>
                                 <li class="nav-item highlighted-menu"><a class="nav-link" href="{{ route('web.bookappointment') }}">Book Appointment</a></li>
                             </ul>
                         </div>

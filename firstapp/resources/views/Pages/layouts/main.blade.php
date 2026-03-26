@@ -73,7 +73,9 @@
     <script src="{{url('assets/js/wow.min.js')}}"></script>
     <!-- Main Custom js file -->
     <script src="{{url('assets/js/function.js')}}"></script>
-
+    {{-- table data --}}
+   
+    @stack('webscript');
 </body>
 
 <!-- Mirrored from html.awaikenthemes.com/genlab/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Mar 2026 07:14:19 GMT -->
